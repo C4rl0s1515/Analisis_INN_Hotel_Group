@@ -32,6 +32,7 @@ Este dashboard estará acompañado de un informe explicativo con las principales
 |------ data                  
   |---- INNHotelsGroup.csv   #Datos originales
 |------ Excels
+  |---- Carga_transformación_datos.xlsx # Excel con los datos originales
 ```
 
 ## 4. Descripción del Conjunto de Datos
