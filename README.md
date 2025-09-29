@@ -42,8 +42,8 @@ El conjunto de datos utilizado para este proyecto contiene información sobre re
 
 - **nº_adultos:**	Número de adultos incluidos en la reserva.
 - **nº_niños:**	Número de niños incluidos en la reserva.
-- **noches_semana:**	Noches reservadas entre lunes y jueves.
-- **noches_findesemana:**	Noches reservadas entre viernes y domingo.
+- **noches_semana:**	Noches reservadas entre lunes y viernes.
+- **noches_findesemana:**	Noches reservadas entre sabado y domingo.
 - **tipo_plan_comida:**	Tipo de régimen de comidas contratado (por ejemplo, Sólo Alojamiento, Media Pensión, Pensión Completa).
 necesita_parking	Indica si el huésped solicitó parking (Sí/No).
 - **tipo_habitacion:**	Tipo de habitación reservada (Ej. Individual, Doble, Suite).
