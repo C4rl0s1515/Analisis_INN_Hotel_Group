@@ -31,9 +31,12 @@ Este dashboard estará acompañado de un informe explicativo con las principales
 ```bash
 |------ data                  
   |---- INNHotelsGroup.csv   #Datos originales
+  |---- INNHotelsGroup_modificación_datos_csv #Datos columna avg_price_per_room modificados cambio . por , 
   |---- Datos_Transformados.csv #Datos listos para analisis en formato csv
 |------ Excels
-  |---- Carga_transformación_datos.xlsx # Excel con los datos originales
+  |---- Carga_datos_originales.xlsx #Datos originales en formato excel
+  |---- Analisis_datos.xlsx # Preparación de datos para analisis.
+  |---- Analisis_datos_listos.xlsx # Datos listos para analisis formato excel.
 ```
 
 ## 4. Descripción del Conjunto de Datos
@@ -74,11 +77,14 @@ El conjunto de datos utilizado para este proyecto contiene información sobre re
 - Creación del respositorio.
 - Generación de archivo Readme y gitignore.
 - Creación del sistema de carpetas del repo.
-- Añadir el conjunto de datos original 'INNHotelsGroup.csv'
+- Añadir el conjunto de datos original 'INNHotelsGroup.csv'.
+- Cambio . por , columna avg_price_per_room para poder trabjar con los datos 'INNHotelsGroup_modificación_datos.csv'.
+
 ### Sesión 2.
 - Traducción de la Tabla de datos de Ingles a Español. 
 - Creación de columnas complementarias para la realización del analisis.
-- Creación del archivo en formato csv para mayor facilidad de trabajo en nuestra tabala de datos. (Datos_Transformados.csv) 
+- Creación del archivo en formato csv para mayor facilidad de trabajo en nuestra tabala de datos. (Datos_Transformados.csv)
+- Creación de tabla excel con datos listos para el analisis, (Analisis_datos_listos.xlsx) 
 
 ## 6. Transformación y Limpieza de los Datos
 
