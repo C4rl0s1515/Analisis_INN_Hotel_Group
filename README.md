@@ -31,6 +31,7 @@ Este dashboard estará acompañado de un informe explicativo con las principales
 ```bash
 |------ data                  
   |---- INNHotelsGroup.csv   #Datos originales
+  |---- Datos_Transformados.csv #Datos listos para analisis en formato csv
 |------ Excels
   |---- Carga_transformación_datos.xlsx # Excel con los datos originales
 ```
@@ -41,17 +42,32 @@ El conjunto de datos utilizado para este proyecto contiene información sobre re
 
 - **ID_reserva:**	Identificador único de la reserva.
 
-- **nº_adultos:**	Número de adultos incluidos en la reserva.
-- **nº_niños:**	Número de niños incluidos en la reserva.
-- **noches_semana:**	Noches reservadas entre lunes y viernes.
-- **noches_findesemana:**	Noches reservadas entre sabado y domingo.
-- **tipo_plan_comida:**	Tipo de régimen de comidas contratado (por ejemplo, Sólo Alojamiento, Media Pensión, Pensión Completa).
-necesita_parking	Indica si el huésped solicitó parking (Sí/No).
-- **tipo_habitacion:**	Tipo de habitación reservada (Ej. Individual, Doble, Suite).
-- **antelacion_reserva:**	Número de días entre la fecha de reserva y la fecha de llegada.
-- **dia_llegada:**	Día de la semana en que está programada la llegada (Ej. Lunes, Martes…).
-- **tipo_cliente:**	Tipo de cliente (por ejemplo, Recurrente, Nuevo, Grupo, Empresa).
-- **nº_previas_cancelaciones:**	(Número de cancelaciones previas realizadas por el cliente).
+- **Nº_adultos:**	Número de adultos incluidos en la reserva.
+- **Nº_niños:**	Número de niños incluidos en la reserva.
+- **Nº_total_de_viajeros:** Número total de personas que viajan (incluye adultos y niños).
+- **Viaja_con_niños:** Indica si en el viaje se incluyen niños (Si, NO).
+- **Nº_de_noches_fin_de_semana:**	Noches reservadas entre sabado y domingo.
+- **Nº_de_noches_entre_semana:**	Noches reservadas entre lunes y viernes.
+- **Nº_total_de_noches:** Noches reservadas en total, incluye días entre semana y fin de semana.
+- **Plan_de_comida:**	Tipo de régimen de comidas contratado para el viaje (Desayuno, Media Pensión, Pensión Completa, No Seleccionado).
+- **Plaza_de_parking:**	Indica si el huésped solicitó plaza de parking (Si, No).
+- **Tipo_de_habitacion:**	Tipo de habitación reservada (Los valores estan codificados por INN Hotels)
+- **Fecha_de_reserva:** Día en que el cliente realiza la reserva.
+- **Fecha_de_llegada:** Día en que el cliente llega al Hotel de destino.
+- **Fecha_de_salida:** Día en que el cliente se va del Hotel.
+- **Antelacion_de_la_reserva:**	Número de días entre la fecha de reserva y la fecha de llegada.
+- **Cliente_previsor:**	Muestra como de previsor es el cliente respecto a la reserva del viaje (Nada_previsor, Poco_previsor, Previsor, Bastante_previsor, Extremadamente_previsor).
+- **Tipo_de_segmento_de_mercado:** Muestra a que segemento del mercado al que pertenece el cliente, según la reserva realizada.
+- **Cliente_repite:** Indica si el cliente repite estancia (Si, NO).
+- **Nº_de_cancelaciones_previas:** Número de cancelaciones previas realizadas por el cliente.
+- **Nº_de_reservas_previas_no_canceladas:** Número de reservas previas realizadas por el cliente y no canceladas.
+- **Fiabilidad_de_la_reserva:** Indica el grado de fiabilidad de la reserva realizada por el cliente (Baja, Media, Alta, Muy_Alta).
+- **Precio_medio_por_habitación:** Precio medio por día de reserva, los precios de las habitaciones son dinamicos (expresados en euros).
+- **Total_gastado:** Gasto total realizado durante la estancia (expresados en euros).
+- **Precio_medio_por_persona:** Indica el gasto de cada persona durante la estancia (expresados en euros).
+- **Nº_de_requerimientos_especiales:** Número de requerimientos especiales realizados por los clientes (planta alta, vistas desde la habitación, etc)
+- **Cliente_exigente:** Muetra como de exigente es el cliente en relación a los requerimientos realizados (Nada, Poco, Bastante, Mucho).
+- **Estado_de_la_reserva:** Muestra el estado de la reserva.
 
 ## 5. Recap Sesiones
 ### Sesión 1.
@@ -59,6 +75,10 @@ necesita_parking	Indica si el huésped solicitó parking (Sí/No).
 - Generación de archivo Readme y gitignore.
 - Creación del sistema de carpetas del repo.
 - Añadir el conjunto de datos original 'INNHotelsGroup.csv'
+### Sesión 2.
+- Traducción de la Tabla de datos de Ingles a Español. 
+- Creación de columnas complementarias para la realización del analisis.
+- Creación del archivo en formato csv para mayor facilidad de trabajo en nuestra tabala de datos. (Datos_Transformados.csv) 
 
 ## 6. Transformación y Limpieza de los Datos
 
