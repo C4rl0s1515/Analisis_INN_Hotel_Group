@@ -58,6 +58,7 @@ El conjunto de datos utilizado para este proyecto contiene información sobre re
 - **Fecha_de_reserva:** Día en que el cliente realiza la reserva.
 - **Fecha_de_llegada:** Día en que el cliente llega al Hotel de destino.
 - **Fecha_de_salida:** Día en que el cliente se va del Hotel.
+- **Mes_de_reserva:** Mes en el que el cliente realiza la reserva (expresado de forma numérica).
 - **Antelacion_de_la_reserva:**	Número de días entre la fecha de reserva y la fecha de llegada.
 - **Cliente_previsor:**	Muestra como de previsor es el cliente respecto a la reserva del viaje (Nada_previsor, Poco_previsor, Previsor, Bastante_previsor, Extremadamente_previsor).
 - **Tipo_de_segmento_de_mercado:** Muestra a que segemento del mercado al que pertenece el cliente, según la reserva realizada.
@@ -73,19 +74,34 @@ El conjunto de datos utilizado para este proyecto contiene información sobre re
 - **Estado_de_la_reserva:** Muestra el estado de la reserva.
 
 ## 5. Recap Sesiones
+
 ### Sesión 1.
-- Creación del respositorio.
+- Creación del respositorio en Github.
+
 - Generación de archivo Readme y gitignore.
 - Creación del sistema de carpetas del repo.
 - Añadir el conjunto de datos original 'INNHotelsGroup.csv'.
-- Cambio . por , columna avg_price_per_room para poder trabjar con los datos 'INNHotelsGroup_modificación_datos.csv'.
+- Se cambia . por , columna avg_price_per_room para poder trabjar con decimales en la tabla de datos y se crea 'INNHotelsGroup_modificación_datos.csv'.
+- Se crea el excel 'carga_datos_originales.xlsx' y se crea una tabla para poder realizar el análisis de datos.
 
 ### Sesión 2.
-- Traducción de la Tabla de datos de Ingles a Español. 
-- Creación de columnas complementarias para la realización del analisis.
-- Creación del archivo en formato csv para mayor facilidad de trabajo en nuestra tabala de datos. (Datos_Transformados.csv)
-- Creación de tabla excel con datos listos para el analisis, (Analisis_datos_listos.xlsx) 
+- Se unieron las columnas "arrival_year", "arrival_month", "arrival_date" para crear "Fecha_de_llegada".
 
+- Se cambiaron los valores de las columnas "required_car_parking_sapace", "repeated_guest", 0 = No y 1 = Si.
+- Traducción completa de la Tabla de datos de Ingles a Español.
+- Creación de columnas complementarias para la realización del análisis, "Nº_total_de_viajeros", "Viaja_con_niños", "Nº_total_de_noches", "Fecha_de_reserva", "Fecha_de_salida" "Cliente_previsor", "Fiabilidad_de_la_reserva", "Total_gastado", "Precio_medio_por_persona", "Cliente_exigente".  
+- Creación del archivo en formato csv para mayor facilidad de trabajo en nuestra tabala de datos. (Datos_Transformados.csv)
+- Creación de tabla excel con datos listos para el análisis, (Analisis_datos_listos.xlsx) 
+
+### Sesión 3.
+- Se crea la hoja de Analisis_descriptivo_numérico.
+
+- Se crean los resumenes de estadísticas de las columnas ...
+- Se crena los histogrmas de las columnas ...
+- Se crean las tablas dinamicas de las columnas ...
+- Se crean los graficos dinamicos de las tabalas dinamicas ...
+- Se crean los Box de las columnas ...
+ 
 ## 6. Transformación y Limpieza de los Datos
 
 Durante la etapa de limpieza se realizaron las siguientes tareas:
