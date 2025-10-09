@@ -82,7 +82,7 @@ El conjunto de datos utilizado para este proyecto contiene información sobre re
 - Creación del sistema de carpetas del repo.
 - Añadir el conjunto de datos original 'INNHotelsGroup.csv'.
 - Se cambia . por , columna avg_price_per_room para poder trabjar con decimales en la tabla de datos y se crea 'INNHotelsGroup_modificación_datos.csv'.
-- Se crea el excel 'carga_datos_originales.xlsx' y se crea una tabla para poder realizar el análisis de datos.
+- Se crea el excel 'carga_datos_originales.xlsx' y se crea una tabla con el nombre Datos_Transformados para poder realizar el análisis de datos.
 
 ### Sesión 2.
 - Se unieron las columnas "arrival_year", "arrival_month", "arrival_date" para crear "Fecha_de_llegada".
@@ -90,6 +90,8 @@ El conjunto de datos utilizado para este proyecto contiene información sobre re
 - Se cambiaron los valores de las columnas "required_car_parking_sapace", "repeated_guest", 0 = No y 1 = Si.
 - Traducción completa de la Tabla de datos de Ingles a Español.
 - Creación de columnas complementarias para la realización del análisis, "Nº_total_de_viajeros", "Viaja_con_niños", "Nº_total_de_noches", "Fecha_de_reserva", "Fecha_de_salida" "Cliente_previsor", "Fiabilidad_de_la_reserva", "Total_gastado", "Precio_medio_por_persona", "Cliente_exigente".  
+- Eliminación de las filas donde el número total de noches es igual a 0, ya que una reserva donde el número total de noches es igual a 0 no tiene sentido.
+- Se mantienen las filas donde el precio total es igual a 0 o con importes muy pequeños aunque a priori no tenga mucho sentido, ya que puede deberse a una promoción donde el viajero es invitado por el hotel o que el viajero este canjeando puntos y por esta razón no tenga que pagar nada o el precio a pagar sea muy pequeño.
 - Creación del archivo en formato csv para mayor facilidad de trabajo en nuestra tabala de datos. (Datos_Transformados.csv)
 - Creación de tabla excel con datos listos para el análisis, (Analisis_datos_listos.xlsx) 
 
@@ -97,10 +99,19 @@ El conjunto de datos utilizado para este proyecto contiene información sobre re
 - Se crea la hoja de Analisis_descriptivo_numérico.
 
 - Se crean los resumenes de estadísticas de las columnas ...
-- Se crena los histogrmas de las columnas ...
+- Se crena los ---¿histogrmas?--- de las columnas ...
 - Se crean las tablas dinamicas de las columnas ...
 - Se crean los graficos dinamicos de las tabalas dinamicas ...
 - Se crean los Box de las columnas ...
+
+### Sesión 4.
+- Se crea la hoja de Analisis_categórico
+
+- Se crean las tablas dinamicas de las columnas ...
+- Se crean los graficos dinamicos de las tabalas dinamicas ...
+- Se crea la hoja de Analisis_temporales
+- Se crean las tablas dinamicas de las columnas ...
+- Se crean los graficos dinamicos de las tablas dinamincas ...
  
 ## 6. Transformación y Limpieza de los Datos
 
