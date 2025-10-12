@@ -1,7 +1,7 @@
-# Análisis de Datos para INN Hotels Group
+# 🏨 Análisis de Datos de reserva para INN Hotels Group
 
 ## 1. Contexto y Problema Actual
-INNHotelsGroup, una cadena hotelera con múltiples ubicaciones, ha identificado la necesidad de mejorar la gestión de sus reservas y reducir el número de cancelaciones. Si bien cuentan con una plataforma digital de reservas, enfrentan ciertos desafíos, como:
+INNHotelsGroup, una cadena hotelera con múltiples ubicaciones repartidas por todo el mundo, ha identificado la necesidad de mejorar la gestión de sus reservas y así reducir el número de cancelaciones. Si bien cuentan con una plataforma digital de reservas, enfrentan ciertos desafíos, como:
 
 - Alta frecuencia de cancelaciones previas a la llegada.
 
@@ -13,11 +13,11 @@ INNHotelsGroup, una cadena hotelera con múltiples ubicaciones, ha identificado 
 
 Mediante el análisis de los datos históricos de reservas, este proyecto busca identificar patrones clave que ayuden a comprender mejor el comportamiento de los huéspedes, anticipar cancelaciones y mejorar la eficiencia operativa.
 
-## 2. Objetivo del Proyecto 
+## 2. Objetivo principal del Proyecto 
 
 El objetivo principal de este análisis es desarrollar un dashboard interactivo que brinde una visión clara y actualizada sobre las reservas y los tipos de clientes, facilitando la toma de decisiones en distintas áreas como:
 
-- Gestión de cancelaciones.
+- Gestión y predicción de cancelaciones.
 
 - Optimización de la ocupación según el tipo de habitación o el plan alimenticio.
 
@@ -25,7 +25,7 @@ El objetivo principal de este análisis es desarrollar un dashboard interactivo 
 
 - Segmentación de clientes según su comportamiento y preferencias.
 
-Este dashboard estará acompañado de un informe explicativo con las principales conclusiones obtenidas y recomendaciones para la mejora del negocio.
+Este dashboard estará acompañado de un informe final explicativo con las principales conclusiones obtenidas y recomendaciones para la mejora del negocio.
 
 ## 3.Estructura del Repositorio
 ```bash
@@ -39,7 +39,7 @@ Este dashboard estará acompañado de un informe explicativo con las principales
   |---- Analisis_datos_listos.xlsx # Datos listos para analisis formato excel.
 ```
 
-## 4. Descripción del Conjunto de Datos
+## 4. Descripción de las columnas del Conjunto de Datos
 
 El conjunto de datos utilizado para este proyecto contiene información sobre reservas realizadas en los hoteles del grupo INN Hotels Group. Las variables incluidas permiten analizar tanto el comportamiento del cliente como características específicas de cada reserva.
 
@@ -65,7 +65,6 @@ El conjunto de datos utilizado para este proyecto contiene información sobre re
 - **Cliente_repite:** Indica si el cliente repite estancia (Si, NO).
 - **Nº_de_cancelaciones_previas:** Número de cancelaciones previas realizadas por el cliente.
 - **Nº_de_reservas_previas_no_canceladas:** Número de reservas previas realizadas por el cliente y no canceladas.
-- **Fiabilidad_de_la_reserva:** Indica el grado de fiabilidad de la reserva realizada por el cliente (Baja, Media, Alta, Muy_Alta).
 - **Precio_medio_por_habitación:** Precio medio por día de reserva, los precios de las habitaciones son dinamicos (expresados en euros).
 - **Total_gastado:** Gasto total realizado durante la estancia (expresados en euros).
 - **Precio_medio_por_persona:** Indica el gasto de cada persona durante la estancia (expresados en euros).
@@ -112,6 +111,18 @@ El conjunto de datos utilizado para este proyecto contiene información sobre re
 - Se crea la hoja de Analisis_temporales
 - Se crean las tablas dinamicas de las columnas ...
 - Se crean los graficos dinamicos de las tablas dinamincas ...
+
+### Sesión 5.
+- Se crea la hoja Analisis_Bv_num, para analizar la relación de las variables numéricas con el estado de la reserva.
+
+- Se crean las tablas dinamicas de las columnas ... incluyendo la variable Estado_de_la_reserva en cada tabla, para observar como afectan las distintas variables al estado de la reserva.
+- Se crean los graficos dinamicos de las tablas anteriormente mencionadas para observar con mayor facilidad la influencia de cada viriable en el estado de la reserva.
+- Se crea la hoja de Analisis_Bv_categoricas para analizar la relación que existe entre las variables categóricas con el estado de la reserva.
+- Se crean las tablas dinamicas de las columnas ... incluyendo la variable Estado_de_la_reserva en cada tabla, para observar como afectan las distintas variables al estado de la reserva.
+- Se crean los graficos dinamicos de las tablas creadas anteriormente para observar con mayor facilidad la influencia de cada viriable en el estado de la reserva.
+- Se crea la hoja de Analisis_bv_temporales para analizar la relación que existe entre las variables temporales con el estado de la reserva. 
+- Se crean las tablas dinamicas de las columnas ... incluyendo la variable Estado_de_la_reserva en cada tabla, para observar como afectan las distintas variables al estado de la reserva.
+- Se crean los graficos dinamicos de las tablas creadas anteriormente para observar con mayor facilidad la influencia de cada viriable en el estado de la reserva.
  
 ## 6. Transformación y Limpieza de los Datos
 
